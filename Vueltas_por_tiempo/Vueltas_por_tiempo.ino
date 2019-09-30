@@ -29,7 +29,7 @@ void loop ()
   {
     tiempo_anterior = tiempo;
 
-    ciclos = contador; /// 42; //24 rendijas una vuelta, 42 cambios 
+    ciclos = contador; //24 rendijas una vuelta, 42 cambios 
     Serial.println(ciclos);
 
     contador = 0;

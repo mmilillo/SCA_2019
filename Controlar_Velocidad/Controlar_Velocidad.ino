@@ -25,28 +25,25 @@ void loop ()
 
   tiempo = millis();
 
-  if(tiempo - tiempo_anterior >= 5000)
+  if(tiempo - tiempo_anterior >= 250)
   {
     tiempo_anterior = tiempo;
 
-    ciclos = contador; /// 42; //24 rendijas una vuelta, 42 cambios 
+    ciclos = contador; //24 rendijas una vuelta, 42 cambios 
     Serial.println(ciclos);
 
 
     if(ciclos > 5)
     {
       Serial.println("apagate");
-      contador = 0;
       digitalWrite(puentePin, LOW);
        
     }
     else
     {
-      contador = 0;
       Serial.println("prendete");
       digitalWrite(puentePin, HIGH);
     }
-    
     
     contador = 0;
     
