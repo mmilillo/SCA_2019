@@ -33,7 +33,7 @@ void loop ()
     Serial.println(ciclos);
 
 
-    if(ciclos > 5)
+    if(ciclos > 20)
     {
       Serial.println("apagate");
       digitalWrite(puentePin, LOW);
